@@ -5,8 +5,6 @@ Live: https://aedan-warfield-portfolio.now.sh/
 
 ## Summary
 
-----
-
 Originally I wasn't going to use react for this portfolio, as it's a bit overkill, but I wanted to challenging myself to use a canvas in React. This is my first time using a canvas at all. 
 
 I used object oriented programming and ES6's class functionality to create the landing page. It is a simulation of 'boids'.
