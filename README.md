@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aedan Warfield
+My Portfolio
 
-## Available Scripts
+Live: https://aedan-warfield-portfolio.now.sh/
 
-In the project directory, you can run:
+## Summary
 
-### `npm start`
+----
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Originally I wasn't going to use react for this portfolio, as it's a bit overkill, but I wanted to challenging myself to use a canvas in React. This is my first time using a canvas at all. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I used object oriented programming and ES6's class functionality to create the landing page. It is a simulation of 'boids'.
 
-### `npm test`
+Boids are the representation of movement between animals such as birds or fish. They are governed by three distict properties. Each animal, which I referred to as a bird, try to align their direction of movement with bird's around them. They also try to separate a bit if they are too close to one another which also helps avoid head-on collisions. The final rule they are governed by is cohesion which makes them steer towards the average center of nearby flocks. If you are interested to learn more about boids this is the reference paper I used. https://www.red3d.com/cwr/boids/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I decided to take out the cohesion rule from each bird's behavior because I wanted to make the simulation more chaotic. When I was using the cohesion rule it just didn't look as good due to the uniformity of the movement. I still am using the Alignment and Separation rules in the simulation.
 
-### `npm run build`
+## Technology Used
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Javascript, OOP, HTML Canvas, React, CSS, HTML
