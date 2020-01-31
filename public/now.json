@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "alias": "aedan-warfield-portfolio",
+    "name": "portfolio",
+    "routes": [
+        {
+            "src": "^/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/.*",
+            "dest": "/index.html"
+        }
+    ]
+}

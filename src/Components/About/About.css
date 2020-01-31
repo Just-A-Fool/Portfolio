@@ -1,0 +1,50 @@
+#about-me {
+    background-color: #c20b0b4b;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+#about-me-title {
+    border: solid rgb(0, 0, 0);
+    background-color: #161616;
+    border-width:  2px 0 2px 0 ;
+    padding:20px;
+}
+
+#about-me-title h2{
+    margin:0;
+}
+
+.about-me-info {
+    padding:10px;
+    background-color: rgb(22, 22, 22, .75);
+    margin: 50px auto 0;
+    width:95%;
+    text-align: left;
+}
+
+@media only screen and (min-width: 520px) {
+
+    .about-me-info {
+      width:90%;
+      padding: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+    .about-me-info {
+      width:70%;
+      padding:30px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .about-me-info {
+      width:60%;
+    }
+
+}
