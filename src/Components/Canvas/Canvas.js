@@ -17,7 +17,6 @@ class Canvas extends React.Component {
                     <p>Portfolio</p>
                     <button id="landing-button" onClick={() => this.props.history.push('/projects')}>Projects</button>
                 </div>
-                <script src="./canvas-logic.js"></script>
             </Fragment>
         );
     }
