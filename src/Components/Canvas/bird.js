@@ -1,10 +1,8 @@
 export default class bird {
 
-    constructor(x, y, r, dx, dy, color, context) {
+    constructor(x, y, color, context) {
         this.x = x;
         this.y = y;
-        //Not used in this build but was for radius of the bird as they were circles.
-        this.r = r;
         this.velocity = 5;
         //Heading in random radians from 0 to 2PI
         this.heading = (Math.random() * (Math.PI * 2));

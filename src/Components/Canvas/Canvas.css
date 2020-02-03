@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-    margin:0;
+    /* margin:0;
+    margin-bottom: 50px; */
 }
 
 canvas {
@@ -33,7 +34,7 @@ canvas {
 #landing-button {
     background-color: rgba(92, 92, 92, 0.295);
     border:0;
-    width: 50%;
+    width: 51%;
     color:white;
     margin-bottom: 10px;
     padding: 5px;

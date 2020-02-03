@@ -18,7 +18,7 @@ const STORE = {
         },
         {
             title: 'Battleship',
-            img: 'BattleShip',
+            img: 'Battleship',
             imgAlt: 'A picture below the surface of the ocean along with the text "Battleship".',
             desc: `A fullstack app allowing the play of the classic boardgame battleship online. 
                 This application uses websockets for live-communication between clients. Players are 

@@ -6,8 +6,9 @@ function Navbar(props) {
     return (
         <nav>
             <button className='nav-button' onClick={() => props.history.push('/')}>Home</button>
-            <button className='middle-button' onClick={() => props.history.push('/projects')}>Projects</button>
+            <button className='nav-button' onClick={() => props.history.push('/projects')}>Projects</button>
             <button className='nav-button' onClick={() => props.history.push('/about')}>About</button>
+            <button className='nav-button' onClick={() => props.history.push('/contact')}>Contact</button>
         </nav>
     );
 }

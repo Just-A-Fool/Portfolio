@@ -5,6 +5,7 @@ import ProjectScreen from './Components/Projects/ProjectScreen'
 import About from './Components/About/About';
 import NotFound from './Components/404/404';
 import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
             exact
             path={'/projects'}
             component={ProjectScreen}
+          />
+          <Route
+            exact
+            path={'/contact'}
+            component={Contact}
           />
           <Route component={NotFound} />
         </Switch>
