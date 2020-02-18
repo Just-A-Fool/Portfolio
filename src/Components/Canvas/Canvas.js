@@ -14,9 +14,9 @@ class Canvas extends React.Component {
                 <canvas></canvas>
                 <div id="landing-header">
                     <h1>Aedan Warfield</h1>
-                    <button id="landing-button" onClick={() => this.props.history.push('/projects')}>Projects</button>
-                    <button id="landing-button" onClick={() => this.props.history.push('/about')}>About</button>
-                    <button id="landing-button" onClick={() => this.props.history.push('/contact')}>Contact</button>
+                    <button className="landing-button" onClick={() => this.props.history.push('/projects')}>Projects</button>
+                    <button className="landing-button" onClick={() => this.props.history.push('/about')}>About</button>
+                    <button className="landing-button" onClick={() => this.props.history.push('/contact')}>Contact</button>
                 </div>
             </Fragment>
         );

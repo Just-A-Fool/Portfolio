@@ -8,7 +8,7 @@ const STORE = {
                 was used in WWII to encode messages between radio relay points, while the allies 
                 were able to intercept these messages they were unable to decipher them. This app 
                 allows a user to encrypt/decrypt a message using a virtual Enigma Machine. Only those 
-                who use the correct settings or "cipher" are able to decode this message. The app allows 
+                who use the correct settings, or "cipher," are able to decode this message. The app allows 
                 these ciphers to be made and saved as well. Note: Since the Enigma was cracked, these messages 
                 can also be decoded in a similar manner.`,
             live: 'https://aedan-enigma.now.sh/',

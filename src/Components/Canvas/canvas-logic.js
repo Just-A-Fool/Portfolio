@@ -19,7 +19,7 @@ function start() {
             let y = Math.floor((Math.random() * window.innerHeight));
 
             //Slightly different red colors
-            let color = `rgb(255, ${Math.floor(Math.random() * 50)}, ${Math.floor(Math.random() * 50)})`;
+            let color = `255, ${Math.floor(Math.random() * 50)}, ${Math.floor(Math.random() * 50)}`;
 
             birds.push(new bird(x, y, color, c));
         }
@@ -28,7 +28,7 @@ function start() {
         let x = Math.floor((Math.random() * window.innerWidth));
         let y = Math.floor((Math.random() * window.innerHeight));
 
-        birds.push(new bird(x, y, 'rgb(24, 255, 236)', c));
+        birds.push(new bird(x, y, '24, 255, 236', c));
 
 
 

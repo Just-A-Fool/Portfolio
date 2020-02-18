@@ -123,8 +123,10 @@ export default class bird {
         //Heading plus equals average between heading and current heading with a turn radius of 1/30th
         //of the average. Could also be written as / 2(30)
         this.heading += (heading + this.heading) / 60;
-        //If this sets this.heading over 2PI put it back within range of 0-2PI
-        if (this.heading >= (Math.PI * 2)) {
+        //If this sets this.heading over 2PI put it back within range of 0-2.5PI
+        //I used 2.5PI to fix a bug where both steering functions would flip back and forth due to having the same reset point (2PI and 0)
+        //This caused jittering and made birds sometimes get stuck going in one direction.
+        if (this.heading >= (Math.PI * 2) + (Math.PI / 2)) {
             this.heading %= (Math.PI * 2);
         }
 
@@ -162,11 +164,19 @@ export default class bird {
         else if (this.y > window.innerHeight) this.y = 0;
 
 
+
+        let point2 = this.heading - ((3 * Math.PI) / 4);
+        let point3 = this.heading + ((3 * Math.PI) / 4);
         //Displaying bird on canvas
         this.c.beginPath();
-        this.c.moveTo(this.x + this.dx * 2.5, this.y + this.dy * 2.5);
-        this.c.lineTo(this.x, this.y);
-        this.c.strokeStyle = this.color;
+        this.c.moveTo(this.x + this.dx * 1.5, this.y + this.dy * 1.5);
+        this.c.lineTo(this.x + Math.cos(point2) * 5, this.y + Math.sin(point2) * 5);
+        this.c.lineTo(this.x + Math.cos(point3) * 5, this.y + Math.sin(point3) * 5);
+        this.c.lineTo(this.x + this.dx * 1.5, this.y + this.dy * 1.5);
+
+        this.c.strokeStyle = `rgb(${this.color})`;
+        this.c.fillStyle = `rgba(${this.color}, .75)`;
+        this.c.fill()
         this.c.stroke();
 
     }
