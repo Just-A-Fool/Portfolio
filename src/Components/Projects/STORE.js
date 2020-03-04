@@ -29,6 +29,28 @@ const STORE = {
             tech: ['Javascript', 'CSS', 'HTML', 'Node', 'React', 'Socket-io', 'PostgreSQL', 'Mocha', 'Chai']
         },
         {
+            title: 'Portfolio',
+            img: 'Portfolio',
+            imgAlt: 'A thumbnail of my portfolio.',
+            desc: 'Along with being my portfolio I wanted to do something interesting. I decided to create a 2D simulation of Boids on an HTML5 canvas. Boids are the representation of movement between animals such as birds or fish. More information is available in the README on GitHub.',
+            live: 'https://aedan-warfield-portfolio.now.sh/',
+            gitHub: 'https://github.com/Just-A-Fool/Portfolio',
+            tech: ['Javascript', 'CSS', 'HTML', 'Canvas', 'React']
+        },
+        {
+            title: 'Currency Converter',
+            img: 'Currency',
+            imgAlt: 'A thumbnail showing my currency converter UI.',
+            desc: `I wrote this as a coding challenge sent to me by a potential employer. It converts 
+            between two different currencies based on the exchange rates of a third party API. This was my first time 
+            using XML. I decided to stray from React in this project because React is overkill on this scale and I wanted to 
+            show proficiency outside React.`,
+            live: 'https://just-a-fool.github.io/Currency-Converter-Client/',
+            clientGitHub: 'https://github.com/Just-A-Fool/Currency-Converter-Client',
+            serverGitHub: 'https://github.com/Just-A-Fool/Currency-Converter-Server',
+            tech: ['Javascript', 'CSS', 'HTML', 'jQuery', 'Node', 'Mocha', 'Chai']
+        },
+        {
             title: 'Spaced Repetition',
             img: 'SpacedRepetition',
             imgAlt: 'A thumbnail showing the UI for my spaced repetition app.',
@@ -48,7 +70,7 @@ const STORE = {
             desc: 'An app that lets one save bookmarks to their favorite websites.',
             live: 'https://thinkful-ei-heron.github.io/Aedan-bookmarks-app/',
             gitHub: 'https://github.com/thinkful-ei-heron/Aedan-bookmarks-app',
-            tech: ['Javascript', 'CSS', 'HTML']
+            tech: ['Javascript', 'CSS', 'HTML', 'jQuery']
         }
     ]
 };
